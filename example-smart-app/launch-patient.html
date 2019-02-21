@@ -27,7 +27,8 @@
     <script>
       FHIR.oauth2.authorize({
         'client_id': '6ca63f94-3571-4b44-8bda-e6bf6a9cabe4',
-        'scope':  'patient/Patient.read patient/Observation.read launch/patient online_access openid profile'
+        'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile',
+        'aud': "https://open-ic.epic.com/argonaut/api/FHIR/Argonaut/"
       });
     </script>
     <div class="spinner">
